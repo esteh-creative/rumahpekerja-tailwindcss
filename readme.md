@@ -16,6 +16,10 @@ We assume, you already `clone` this repository to your local computer. After tha
 
 If you already finish your task, you can make pull request to branch `dev` and add two reviewers which is @alfangr and @defikri for reviewing your code. In there, we or one of us will inform you about result of reviewing your code about the status code is `approved` or `request change`. If you get result `request change`, you need to change your code or give your opinion about the code if no need to change based on comment from reviewers whereas you get result `approved` from one of us you can merge the pull request. After pull request merged, you must check workflows in github actions is working properly with sign chehcked green. When you got cross red sign, please inform us, we will help to fix it.
 
+Result for staging environment you can check on here: https://internship.esteh.id/2022/rian-squad/dev
+
 ### `Production Environment`
 
 If you already finish your task, you can make pull request to branch `main` and add two reviewers which is @alfangr and @defikri for reviewing your code. In there, we or one of us will inform you about result of reviewing your code about the status code is `approved` or `request change`. If you get result `request change`, you need to change your code or give your opinion about the code if no need to change based on comment from reviewers whereas you get result `approved` from us you can merge the pull request. After pull request merged, you must check workflows in github actions is working properly with sign chehcked green. When you got cross red sign, please inform us, we will help to fix it.
+
+Result for staging environment you can check on here: https://internship.esteh.id/2022/rian-squad/release
