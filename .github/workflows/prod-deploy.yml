@@ -1,4 +1,4 @@
-name: Deployment for Staging
+name: Deployment for Production
 on:
   push:
     branches:
