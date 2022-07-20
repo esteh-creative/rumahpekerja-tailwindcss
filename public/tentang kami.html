@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
     <title>Tentang Kami</title>
+    <style>
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
@@ -33,22 +38,64 @@
                                         class="py-4 px-2 text-black font-semibold hover:text-green-500 transition duration-300">Perusahaan</a>
                                 </li>
                                 <div class="flex items-center">
-                                <li><a href=""
-                                        class="py-4 px-2 text-black font-semibold hover:text-green-500 transition duration-300">Lainnya</a>
-                                    
-                                </li>
-                                <img class="" src="image/donw.png" alt="">
+                                    <li>
+                                        <!-- <a href="" class="py-4 px-2 text-black font-semibold hover:text-green-500 transition duration-300">Lainnya</a> -->
+                                        <div class="dropdown inline-block relative">
+                                            <button
+                                                class=" text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center hover:text-green-500">
+                                                <span class="mr-1">Lainnyaaa</span>
+                                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20">
+                                                    <path
+                                                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                                </svg>
+                                            </button>
+                                            <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 mx-auto ">
+                                                <li class=""><a
+                                                        class="rounded-t bg-gray-200 hover:text-green-500 py-2 px-4  block whitespace-no-wrap"
+                                                        href="#">Menu 1</a></li>
+                                                <li class=""><a
+                                                        class="bg-gray-200 hover:text-green-500 py-2 px-4 block whitespace-no-wrap"
+                                                        href="#">Menu 2</a></li>
+                                                <li class=""><a
+                                                        class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                                        href="#">Menu 3</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
                                 </div>
                         </div>
                     </div>
                     <!-- Navbar items kanan -->
                     <div class="hidden md:flex items-center space-x-6 ">
-                        <div class="flex items-center">
-                        <a href=""
-                            class="py-4 px-2 text-black font-semibold hover:text-green-500 transition duration-300">ID 
-                        </a>
-                        <img class="" src="image/donw.png" alt="">
-                    </div>
+                        <!-- <div class="flex items-center">
+                            <a href=""
+                                class="py-4 px-2 text-black font-semibold hover:text-green-500 transition duration-300">ID
+                            </a>
+                            <img class="" src="image/donw.png" alt=""> -->
+
+                        <div class="dropdown inline-block relative">
+                            <button
+                                class=" text-gray-700 font-semibold rounded inline-flex items-center hover:text-green-500">
+                                <span class="mr-1">ID</span>
+                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                </svg>
+                            </button>
+                            <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 ">
+                                <li class=""><a
+                                        class="rounded-t bg-gray-200 hover:text-green-500 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">Menu satu</a></li>
+                                <li class=""><a
+                                        class="bg-gray-200 hover:text-green-500 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">Menu dua</a></li>
+                                <li class=""><a
+                                        class="rounded-b bg-gray-200 hover:text-green-500 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">Menu tiga</a></li>
+
+                        </div>
                         <a href=""
                             class="py-4 px-2 text-black font-semibold hover:text-green-500 transition duration-300">Daftar</a>
                         <a href=""
@@ -91,29 +138,10 @@
     </nav>
 
     <header>
-            <div>
-                <img src="image/Media.png" class="block mr-auto ml-auto my-10 ">
-            </div>
-        </header>
-
-        <!-- <div class="border md:h-full shadow-xl">
-            <div class=" grid grid-cols-3 gap-3 mr-auto ml-auto md:flex-row md:max-w-7xl object-right mx-auto ">
-                <div class=" border rounded-lg shadow-md h-80 w-96 mx-auto">
-                    <img class="block my-2 mx-auto   " src="image/v1.png" />
-                    <span class="font-medium ">
-                        <center>Terpercaya</center>
-                    </span>
-                
-              </div>
-        </div> -->
-
-
-
-
-
-
-
-
+        <div>
+            <img src="image/Media.png" class="block mr-auto ml-auto my-10 ">
+        </div>
+    </header>
 
     <aside>
         <div class="max-w-md mx-auto bg-white overflow-hidden md:max-w-[69rem] ">
@@ -127,8 +155,7 @@
                         <img src="image/Shield.png" />
                         <span class="font-semibold text-black text-2xl ">Program RumahPerkerja.id </span>
                     </a>
-                    <a href="#"
-                        class="block mt-1 text-lg leading-tight font-medium text-gray-500 my-6">Program
+                    <a href="#" class="block mt-1 text-lg leading-tight font-medium text-gray-500 my-6">Program
                         untuk
                         mendukung peningkatan kompetensi Pekerja Indonesia.</a>
                     <p class="mt-2  text-slate-500 block text-lg leading-tight font-medium ">
@@ -143,66 +170,126 @@
         </div>
     </aside>
 
-    <aside >
-        <div class="h-auto my-10 shadow-lg bg-gradient-to-br from-white to-red-100 ">
+    <aside>
+        <div class="h-auto my-10 shadow-lg bg-gradient-to-br from-white to-red-50 ">
             <div>
                 <a class=" text-2xl leading-tight font-medium my-7 block ">
-                    <center><span class="text-red-700">Rumah Pekerja Indonesia</span> adalah Platform Teknologi yang
+                    <center><span class="text-red-700"><br>Rumah Pekerja Indonesia</span> adalah Platform Teknologi yang
                         Menjadi<br>
                         Wadah untuk Meningkatkan kesempatan Kerja yang Berkualitas.</center>
                 </a>
             </div>
 
-            <div class="border-transparent mx-auto h-96 ">
+            <div class=" mx-auto h-96 ">
                 <div class=" grid grid-cols-3 gap-3 mr-auto ml-auto md:flex-row md:max-w-6xl object-right mx-auto ">
 
                     <div class=" h-44 w-[325px] mx-auto ">
-
                         <span class=" text-slate-500 block text-base leading-tight font-medium hover:underline ">Rumah
                             Pekerja Indonesia adalah wadah bagi seluruh pekerja Indonesia untuk<br> bercengkerama,
                             update
                             informasi<br> ketenagakerjaan, informasi lowongan kerja,<br> meningkatkan kemampuan serta
                             kompetensi diri. </span>
                     </div>
-                    <div class=" border rounded-lg shadow-md h-44 w-[325px] mx-auto">
+                    <div class=" border rounded-lg  h-44 w-[325px] mx-auto">
                         <img class="block my-2 mx-auto   " src="image/v1.png" />
                         <span class="font-medium ">
                             <center>Terpercaya</center>
                         </span>
                     </div>
-                    <div class="border rounded-lg shadow-md h-44 w-[325px] mx-auto">
+                    <div class="border rounded-lg  h-44 w-[325px] mx-auto">
                         <img class="block my-2 mx-auto   " src="image/v2.png" />
                         <span class="font-medium ">
                             <center>Transparan</center>
                         </span>
                     </div>
-                    <div class="border rounded-lg shadow-md h-44 w-[325px] mx-auto">
+                    <div class="border rounded-lg  h-44 w-[325px] mx-auto">
                         <img class="block my-4 mx-auto   " src="image/Group 1.png" />
                         <span class="font-medium ">
                             <center>Proses Cepat</center>
                         </span>
                     </div>
-                    <div class="border rounded-lg shadow-md h-44 w-[325px] mx-auto">
+                    <div class="border rounded-lg  h-44 w-[325px] mx-auto">
                         <img class="block my-5 mx-auto   " src="image/Group 2.png" />
                         <span class="font-medium ">
                             <center>Resmi</center>
                         </span>
                     </div>
-                    <div class="border rounded-lg shadow-md h-44 w-[325px] mx-auto flex items-center py-4 px-2">
+                    <div class="border rounded-lg  h-44 w-[325px] mx-auto flex items-center py-4 px-2">
                         <span class="font-medium text-lg mx-auto h-8 w-8 mr-2">Download</span>
                         <img class=" mx-auto h-28    " src="image/mobile-android 1.png" />
                     </div>
 
                 </div>
+            </div>
         </div>
-        </div>
-        
+
     </aside>
 
     <aside>
-        <div class="border h-auto my-10 shadow-lg bg-gradient-to-br from-white to-red-100">
-
-        </div>
+        <div class="h-auto my-16 bg-white ">
+            <div>
+                <a class=" text-2xl leading-tight font-medium my-7 block ">
+                    <center><span>Dampak Positif terhadap Perekonomian Indonesia</span></center>
+                    <img class="mx-auto my-4 block" src="image/Line 7.png" alt="">
+                </a>
+            </div>
+            <div>
+                <div class="border-transparent md:max-w-[69rem]  mx-auto">  
+                <div class="grid-rows-2 flex md:max-w-full mx-auto space-x-3">
+                    <div class="border  bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                        <div class="md:flex">
+                          <div class="md:shrink-0">
+                            <img class="h-16 md:h-full md:w-25" src="image/Register-Pekerja.png" alt="Man looking at item at a store">
+                          </div>
+                          <div class="p-8">
+                            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a>
+                            <p class="mt-2 text-slate-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="border max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                        <div class="md:flex">
+                          <div class="md:shrink-0">
+                            <img class="h-16 md:h-full md:w-25" src="image/Register-Pekerja.png" alt="Man looking at item at a store">
+                          </div>
+                          <div class="p-8">
+                            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a>
+                            <p class="mt-2 text-slate-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                </div>
+                <div>
+                    <div class="border-transparent md:max-w-[69rem] mx-auto block my-4">  
+                    <div class="grid-rows-2 flex md:max-w-full mx-auto space-x-3">
+                        <div class="border  bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                            <div class="md:flex">
+                              <div class="md:shrink-0">
+                                <img class="h-16 md:h-full md:w-25" src="image/Register-Pekerja.png" alt="Man looking at item at a store">
+                              </div>
+                              <div class="p-8">
+                                <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a>
+                                <p class="mt-2 text-slate-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+                              </div>
+                            </div>
+                          </div>
+                        <div class="border max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                            <div class="md:flex">
+                              <div class="md:shrink-0">
+                                <img class="h-16 md:h-full md:w-25" src="image/Register-Pekerja.png" alt="Man looking at item at a store">
+                              </div>
+                              <div class="p-8">
+                                <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a>
+                                <p class="mt-2 text-slate-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    </div>
+                    
 
     </aside>
 </body>
@@ -220,6 +307,7 @@
                 width: {
                     '430px': '430px',
                     '325px': '325px',
+                    '490px': '490px',
                 }
             }
         }
@@ -231,7 +319,7 @@
                 colors: {
                     'Primary/main': '#F2404D',
                 },
-                
+
             }
         }
     }
@@ -254,17 +342,17 @@
 
     module.exports = {
         theme: {
-          extend: {
-            colors: {
-              primary: "#FAFAFB",
+            extend: {
+                colors: {
+                    primary: "#FAFAFB",
+                },
+                fontFamily: {
+                    inter: "Inter",
+                    Montserrat: 'Montserrat',
+                },
             },
-            fontFamily: {
-              inter: "Inter",
-               Montserrat : 'Montserrat',
-            },
-          },
         },
-      };
+    };
 </script>
 
 </html>
