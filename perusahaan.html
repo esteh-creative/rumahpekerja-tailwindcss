@@ -29,19 +29,21 @@
               </svg>
             </li>
           </ul>
-          <ul class="ml-96 flex text-base font-bold items-center">
-            <li class="flex">
-              ID
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 pl-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </li>
-            <li class="pl-8">Masuk</li>
-            <li class="pl-8">Daftar</li>
-            <div class="ml-8 border bg-primary items-center rounded-2xl border-primary1">
-              <li class="text-sm px-6 py-2">Untuk Perusahaan</li>
-            </div>
-          </ul>
+          <div class="ml-[400px] flex">
+            <ul class="pl-24 flex text-base font-bold items-center">
+              <li class="flex">
+                ID
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 pl-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </li>
+              <li class="pl-8">Masuk</li>
+              <li class="pl-8">Daftar</li>
+              <div class="ml-8 border bg-primary items-center rounded-2xl border-primary1">
+                <li class="text-sm px-6 py-2">Untuk Perusahaan</li>
+              </div>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -49,8 +51,8 @@
 
     <!-- search -->
     <div class="container mt-8 mb-8 px-40">
-      <div class="rounded-xl p-5 bg-primary flex border mx-auto">
-        <input type="email" class="border form-control w-1/2 p-4 ml-5 mr-4 rounded-2xl" id="" placeholder="Tulis apa yang kamu cari" />
+      <div class="rounded-2xl p-5 bg-primary flex border mx-auto justify-center">
+        <input type="email" class="border form-control w-1/2 p-4 mr-4 rounded-2xl" id="" placeholder="  Tulis apa yang kamu cari" />
         <input type="email" class="border form-control w-1/2 p-4 mr-4 rounded-2xl" id="" placeholder="Tulis lokasi" />
         <button type="button" class="w-24 bg-primary1 rounded-2xl text-white">Cari</button>
       </div>
@@ -237,8 +239,9 @@
               primary: "#FAFAFB",
               primary1: "#F2404D",
             },
-            fontFamily: {
-              inter: ["Inter"],
+            margin: {
+              "392.63px": "392.63px",
+              "400px": "400px",
             },
           },
         },
