@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <title>Tentang Kami</title>
     <style>
@@ -632,96 +631,49 @@
 
         </div>
     </footer>
-</body>
-<script>
 
-    const btn = document.querySelector("button.mobile-menu-button");
-    const menu = document.querySelector(".mobile-menu");
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
 
-    btn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-    });
-    module.exports = {
-        theme: {
-            extend: {
-                width: {
-                    '430px': '430px',
-                    '325px': '325px',
-                    '490px': '490px',
-                }
-            }
-        }
-    }
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
 
-    module.exports = {
-        theme: {
-            extend: {
-                colors: {
-                    'Primary/main': '#F2404D',
-                    " #FAFAFB": ' #FAFAFB'
+        tailwind.config = {
+            theme: {
+                extend: {
+                    width: {
+                        '430px': '430px',
+                        '325px': '325px',
+                        '490px': '490px',
+                    },
+                    colors: {
+                        'Primary/main': '#F2404D',
+                        " #FAFAFB": ' #FAFAFB'
+                    },
+                    height: {
+                        '450': '450px',
+                    },
+                    margin: {
+                        '640px': '640px',
+                        '435px': '435px',
+                        '467px': '467px',
+                    }
                 },
-
-            }
-        }
-    }
-    module.exports = {
-        theme: {
-            extend: {
-                height: {
-                    '450': '450px',
+                maxWidth: {
+                    '69rem': '69rem',
+                    '850px': '850px,'
+                },
+                fontFamily: {
+                    custom: ['Inter', 'sans-serif'],
+                    sans: ['Inter','Montserrat'],
+                    heading: ['poppins', 'sans-serif']
                 }
             }
         }
-    }
-    module.exports = {
-        theme: {
-            maxWidth: {
-                '69rem': '69rem',
-                '850px': '850px,'
-            }
-        }
-    }
-
-    module.exports = {
-        purge: [],
-        theme: {
-            fontFamily: {
-                custom: ['Inter', 'sans-serif'],
-            },
-        },
-        variants: {},
-        plugins: [],
-    }
-    module.exports = {
-        theme: {
-            extend: {
-                margin: {
-                    '640px': '640px',
-                    '435px': '435px',
-                    '467px': '467px',
-                }
-            }
-        }
-    }
-
-    module.exports = {
-        purge: {...},
-        theme: {
-            extend: {...},
-            fontFamily:{
-                sans: ['Inter','Montserrat'],
-                heading: ['poppins', 'sans-serif']
-            }
-        }
-        variants: {
-            extend {}
-        },
-        plugins: [
-            require('@tailwindcss/typography'),
-            require('@tailwondcss/forms'),
-            require('@tailwondcss/aspect-ratio'),
-        ]
-    }
-</script>
+    </script>
+</body>
 
 </html>
