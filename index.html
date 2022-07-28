@@ -9,14 +9,29 @@
         .dropdown:hover .dropdown-menu {
             display: block;
         }
+       
+        
+        .card {
+            min-width: 30vw;
+        }
+
+        .arrow {
+            top: 30%;
+            
+        }
+
+        #carrusel {
+            scroll-behavior: smooth;
+        }
+    
     </style>
     <title>home</title>
 </head>
 
 <body>
     <!-- navbar -->
-    <nav class="bg-white  shadow-sm mx-auto  ">
-        <div class="container flex flex-wrap justify-between items-center mx-auto  ">
+    <nav class="bg-white  shadow-sm   ">
+        <div class="container flex  items-center mx-auto   ">
             <a href="#" class="flex">
                 <svg width="89" height="36" viewBox="0 0 89 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -61,8 +76,8 @@
                 </svg>
             </a>
 
-            <div class="hidden   md:block md:w-10/12  ">
-                <ul class="flex flex-col  mt-7 md:flex-row md:space-x-2 md:mt-0 md:text-sm md:font-medium">
+            <div class="hidden pl-10  md:block md:w-10/12  ">
+                <ul class="flex flex-col   md:flex-row  md:mt-0  md:font-medium">
                     <li class="py-4 px-2 ">
                         <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -109,45 +124,43 @@
                                     href="#">Menu 3</a></li>
                         </ul>
                     </div>
+            </div>
+            <div class="container flex  items-center pl-16  ">
+                <!-- nav kanan -->
+                <div
+                    class=" md:flex items-center inline-block relative flex flex-wrap md:flex-row md:space-x-2  md:text-sm md:font-medium pl-64 ">
 
 
-                    <!-- nav kanan -->
-                    <div
-                        class="hidden md:flex items-center space-x-2 inline-block relative flex flex-wrap md:flex-row md:space-x-2  md:text-sm md:font-medium pl-64 ">
+                    <div class="dropdown inline-block relative">
+                        <button
+                            class=" text-gray-700 font-semibold rounded inline-flex items-center hover:text-red-500">
+                            <span class="mr-1 text-[16px] ">ID</span>
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 ">
+                            <li class=""><a
+                                    class="rounded-t bg-gray-200 hover:text-red-500 py-2 px-4 block whitespace-no-wrap"
+                                    href="#">Menu satu</a></li>
+                            <li class=""><a class="bg-gray-200 hover:text-red-500 py-2 px-4 block whitespace-no-wrap"
+                                    href="#">Menu dua</a></li>
+                            <li class=""><a
+                                    class="rounded-b bg-gray-200 hover:text-green-500 py-2 px-4 block whitespace-no-wrap"
+                                    href="#">Menu tiga</a></li>
 
-
-                        <div class="dropdown inline-block relative">
-                            <button
-                                class=" text-gray-700 font-semibold rounded inline-flex items-center hover:text-red-500">
-                                <span class="mr-1 text-[16px] ">ID</span>
-                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 20 20">
-                                    <path
-                                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                                </svg>
-                            </button>
-                            <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 ">
-                                <li class=""><a
-                                        class="rounded-t bg-gray-200 hover:text-red-500 py-2 px-4 block whitespace-no-wrap"
-                                        href="#">Menu satu</a></li>
-                                <li class=""><a
-                                        class="bg-gray-200 hover:text-red-500 py-2 px-4 block whitespace-no-wrap"
-                                        href="#">Menu dua</a></li>
-                                <li class=""><a
-                                        class="rounded-b bg-gray-200 hover:text-green-500 py-2 px-4 block whitespace-no-wrap"
-                                        href="#">Menu tiga</a></li>
-
-                        </div>
-                        <a href=""
-                            class="py-4 px-2text-[16px]  text-black font-semibold hover:text-red-500 transition duration-300">Daftar</a>
-                        <a href=""
-                            class="py-4 px-2 text-[16px] text-black font-semibold hover:text-red-500 transition duration-300">Masuk</a>
-                        <a href=""><button
-                                class="bg-transparent text-[16px]  hover:bg-[#F2404D]  text-black font-semibold hover:text-white py-2 px-4 border border-[#F2404D] hover:border-transparent rounded-lg">
-                                Untuk Perusahaan
-                            </button></a>
                     </div>
+                    <a href=""
+                        class="py-4 px-2text-[16px]  text-black font-semibold hover:text-red-500 transition duration-300">Daftar</a>
+                    <a href=""
+                        class="py-4 px-2 text-[16px] text-black font-semibold hover:text-red-500 transition duration-300">Masuk</a>
+                    <a href=""><button
+                            class="bg-transparent text-[16px]  hover:bg-[#F2404D]  text-black font-semibold hover:text-white py-2 px-4 border border-[#F2404D] hover:border-transparent rounded-lg">
+                            Untuk Perusahaan
+                        </button></a>
+                </div>
                 </ul>
+
 
             </div>
         </div>
@@ -158,7 +171,7 @@
 
 
     <!-- dibawah navbar -->
-    <div class=" bg-gray-100 container rounded-xl mt-6 mb-10 md:max-w-6xl block mr-auto ml-auto">
+    <div class=" bg-gray-100 container rounded-xl mt-6 mb-10 md:max-w-5xl block mr-[170px] ml-[170px]">
         <div class="rounded-xl p-4 bg-primary flex mx-auto ">
             <div class="  w-1/2 p-4 mr-2 rounded-3xl p-14">
                 <div class="mb-8">
@@ -188,7 +201,8 @@
                         </div>
                         <input type="text" id="simple-search"
                             class="bg-background border border-white-300 text-black-900 text-sm rounded-lg focus:ring-blue-500  block w-full pl-10 p-2.5  dark:bg-background-700 dark:border-white-600 dark:placeholder-gray-400 dark:text-black "
-                            placeholder="Ketikkan tujuanmu" required>
+                            placeholder="Ketikkan tujuanmu"  required>
+                            
                     </div>
                     <button type="submit"
                         class="p-2.5 ml-2 text-sm font-medium text-white bg-red-700 rounded-lg border border-blue-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">Eksplor
@@ -312,21 +326,22 @@
 
     <!-- lanjutnya -->
     <aside>
-        <div class="   rounded-xl p-4 bg-primary   md:max-w-6xl mx-auto ">
-            <div class="  w-1/2 p-1 mr-2 rounded-2xl">
-                <div class="mb-8 ">
-                    <p class="  flex items-center font-bold text-[32px] mb-2">
+        <div class="   md:max-w-5xl mx-auto ">
+            <div class="  p-1 mr-2 ">
+                <div class="mb-10   ">
+                    <p class="absolute  pl-10 max-h-4  font-bold text-[32px]">
+
+                        Keunggulan
+                    </p>
+                    <p class=" relative  items-center   mb-2">
                         <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect y="0.5" width="32" height="32" rx="16" fill="#792027" />
                             <path
                                 d="M25.92 11.12C25.8185 10.8757 25.6243 10.6815 25.38 10.58C25.2598 10.5288 25.1307 10.5016 25 10.5H20C19.7348 10.5 19.4804 10.6054 19.2929 10.7929C19.1054 10.9804 19 11.2348 19 11.5C19 11.7652 19.1054 12.0196 19.2929 12.2071C19.4804 12.3946 19.7348 12.5 20 12.5H22.59L17 18.09L13.71 14.79C13.617 14.6963 13.5064 14.6219 13.3846 14.5711C13.2627 14.5203 13.132 14.4942 13 14.4942C12.868 14.4942 12.7373 14.5203 12.6154 14.5711C12.4936 14.6219 12.383 14.6963 12.29 14.79L6.29 20.79C6.19627 20.883 6.12188 20.9936 6.07111 21.1154C6.02034 21.2373 5.9942 21.368 5.9942 21.5C5.9942 21.632 6.02034 21.7627 6.07111 21.8846C6.12188 22.0064 6.19627 22.117 6.29 22.21C6.38296 22.3037 6.49356 22.3781 6.61542 22.4289C6.73728 22.4797 6.86799 22.5058 7 22.5058C7.13201 22.5058 7.26272 22.4797 7.38458 22.4289C7.50644 22.3781 7.61704 22.3037 7.71 22.21L13 16.91L16.29 20.21C16.383 20.3037 16.4936 20.3781 16.6154 20.4289C16.7373 20.4797 16.868 20.5058 17 20.5058C17.132 20.5058 17.2627 20.4797 17.3846 20.4289C17.5064 20.3781 17.617 20.3037 17.71 20.21L24 13.91V16.5C24 16.7652 24.1054 17.0196 24.2929 17.2071C24.4804 17.3946 24.7348 17.5 25 17.5C25.2652 17.5 25.5196 17.3946 25.7071 17.2071C25.8946 17.0196 26 16.7652 26 16.5V11.5C25.9984 11.3693 25.9712 11.2402 25.92 11.12V11.12Z"
                                 fill="white" />
                         </svg>
-
-
-                        Keunggulan
-                    </p>
-                    <p class="text-[16px]">
+</p>
+                    <p class=" text-[16px]">
                         Rumah pekerja indonesia berkomitmen untuk melayani dengan sepenuh hati
                     </p>
                 </div>
@@ -872,9 +887,14 @@
     </aside>
     <!-- grid program -->
 
-    <div class="   rounded-xl p-4 bg-primary   md:max-w-6xl mx-auto  ">
+    <div class="   rounded-xl p-4 bg-primary    mr-[170px] ml-[170px]  ">
         <div class="   p-1 mr-2  ">
             <div class="mb-8  ">
+                <p class="absolute  pl-10 max-h-4  font-bold text-[32px]">
+
+                    
+                    Program RumahPekerja.ID
+                </p>
                 <p class="flex   text-black  items-center   font-bold text-[32px] mb-2 ">
                     <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect y="0.5" width="32" height="32" rx="16" fill="#792027" />
@@ -885,7 +905,7 @@
 
 
 
-                    Program RumahPekerja.ID
+                    
                 </p>
                 <p class="mb-5  text-black sm:text-[16px]">
                     Anda adalah prioritas, Untuk itu kami hadirkan program terbaik kami
@@ -898,6 +918,7 @@
 
         <div class="grid lg:grid-cols-4  mx-auto space-y-2 ">
             <div class=" mx-10 mb-2 rounded-lg  ">
+                
                 <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="72" height="72" rx="12" fill="#FEECED" />
                     <path
@@ -971,9 +992,16 @@
 
     </div>
     <!-- grid partner -->
-    <div class="    p-6 bg-primary   md:max-w-6xl mx-auto  ">
+    <div class="    p-6 bg-primary   md:max-w-5xl mx-auto  ">
         <div class="  p-1 mr-5  ">
             <div class="mb-10  ">
+                <div class="mb-8  ">
+                    <p class="absolute  pl-10 max-h-4  font-bold text-[32px]">
+    
+                        
+                        Partner Kami    
+                    </p>
+                    </div>
                 <p class="flex   text-black  items-center  font-bold text-[32px] mb-2 ">
                     <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect y="0.5" width="32" height="32" rx="16" fill="#792027" />
@@ -985,7 +1013,7 @@
 
 
 
-                    Partner Kami
+                    
                 </p>
                 <p class=" mb-5  text-black sm:text-[16px]">
                     Kami bekerjasama menciptakan ekosistem yang sehat bagi stakeholder yang berperan penting di bidang
@@ -1104,7 +1132,7 @@
     </div>
 
     <!-- grid lanjutan -->
-    <div class="p-4 bg-pink w-full   border rounded-xl shadow-md border md:max-w-6xl  mr-auto ml-auto">
+    <div class="p-4 bg-pink     rounded-xl     mr-[170px] ml-[170px] ">
         <div class=" justify-center  flex mx-auto   ">
             <div class="   p-20 mr- p-17">
                 <div class="mb-8">
@@ -1141,9 +1169,14 @@
     </div>
     <!-- grid konten -->
 
-    <div class="   rounded-xl p-4 bg-primary   md:max-w-6xl mx-auto mr-auto ml-auto  ">
+    <div class="   rounded-xl p-4 bg-primary   md:max-w-5xl mx-auto mr-[170px] ml-[170px]  ">
         <div class="   p-1 mr-2  ">
             <div class="mb-8  ">
+                <p class="absolute  pl-10 max-h-4  font-bold text-[32px]">
+
+                    
+                    Konten Pilihan
+                </p>
                 <p class="flex  text-[32px] text-black  items-center font-bold  mb-2 ">
                     <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect y="0.5" width="32" height="32" rx="16" fill="#792027" />
@@ -1154,7 +1187,7 @@
 
 
 
-                    Konten Pilihan
+                    
                 </p>
                 <p class="mb-5  text-black sm:text-[16px]">
                     Konten terbaru seputar Informasi Kerja baik dalam maupun luar negeri.
@@ -1165,7 +1198,7 @@
 
         <!-- grid -->
 
-        <div class="  grid lg:grid-cols-3  mx-auto  ">
+        <!-- <div class="  grid lg:grid-cols-3  mx-auto  ">
             <div class="   mb-2 rounded-lg  ">
                 <a href="#" class="flex items-center py-4 px-1">
                     <img src="asset/image/Rectangle 1.png" alt="Logo">
@@ -1231,10 +1264,29 @@
                 </div>
             </div>
 
+        </div> -->
+        <div class="relative">
+            <div id="carrusel" class="flex flex-row overflow-x-auto    ">
+            </div>
+    
+          
+            <div id="carrousel-right"
+                     class="  mt-96 arrow absolute  text-white  p-3 p-3 "><span>
+                         <div class="pl-96 justify-center mx-44 ">
+                    <button
+                        class="bg-transparent hover:bg-[#F2404D]  text-black font-semibold hover:text-white py-2 px-10 border border-[#F2404D] hover:border-transparent rounded-lg">
+                        Baca Selengkapnya
+                    </button></a>
+                    </div>
+            </div>
+            
+    
         </div>
-
+            
+    
+        
     </div>
-    <div class="inline-flex   justify-center pl-96 ">
+    <!-- <div class="inline-flex   justify-center pl-96 ">
         <button type="button" class="py-2 px-4 pl-64">
             <svg width="24" height="8" viewBox="0 0 24 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="24" height="8" rx="4" fill="#F2404D" />
@@ -1268,7 +1320,7 @@
             class="bg-transparent hover:bg-[#F2404D]  text-black font-semibold hover:text-white py-2 px-10 border border-[#F2404D] hover:border-transparent rounded-lg">
             Baca Selengkapnya
         </button></a>
-    </div>
+    </div> -->
 
 
     </div>
@@ -1292,7 +1344,13 @@
         </div>
         <div class="border bg-pink     pl-28 mb-10 mt-10 w-full   ">
             <div class="mb-10 pl-20 ">
-                <p class="flex   text-black  items-center   font-bold text-[32px] mb-2 ">
+                <p class="absolute mt-0  pl-10 max-h-4  font-bold text-[32px]">
+
+                    
+                    
+                    Unduh Rumah Pekerja Mobile
+                </p>
+                <p class="flex  mt-11 text-black  items-center   font-bold text-[32px] mb-2 ">
                     <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect y="0.5" width="32" height="32" rx="16" fill="#792027" />
                         <path
@@ -1302,7 +1360,6 @@
 
 
 
-                    Unduh Rumah Pekerja Mobile
                 </p>
                 <p class="text-gray-700 text-base">Permudah urusan Anda dalam meraih mimpi dan membangun bangsa ke arah
                     lebih baik</p>
@@ -1409,7 +1466,8 @@
             </div>
         </div>
     </div>
-   
+</div>
+
 
 
     <!-- footer -->
@@ -1515,7 +1573,130 @@
     <!-- akhir footer -->
 
 
+    <script>
+        var elem = document.getElementById('carrusel')
+        var testimonials = [
 
+            {
+               
+                name: 'Alfan Ghinan R',
+                p1: ' Belum Dapat Panggilan Usai ',
+                p2: 'Wawancara? Mulailah Menindaklanjuti<br> Dari Sekarang!',
+                p3: ' Apa yang Anda rasakan ketika surat lamaran <br> diterima dengan baik dan bahkan hingga     <br>mendapatkan panggilan wawancara? Tentu<br> saja bahagia.',
+
+                p4: '    16 Mei 2020 - 17:27',
+                src: 'asset/image/Rectangle 1.png',
+
+
+
+            },
+            {
+                id: 1,
+                name: 'Alfan Ghinan R',
+                p1: '  Mencari Kerja di Dubai dengan Visit ',
+                p2: 'Visa, Cari Tahu Lebih Dalam Tentang<br> Peraturannya!',
+                p3: ' Sebagai salah satu kota yang menjadi<br> incaran tenaga kerja asing, Dubai<br> menyediakan beragam sektor. Namun <br>demikian, proses mencari pekerjaan di sini<br> membutuhkan waktu yang tidak sebentar.',
+
+                p4: '    16 Mei 2020 - 17:27',
+                src: 'asset/image/Rectangle 2.png',
+
+
+
+            },
+            {
+                id: 1,
+                name: 'Alfan Ghinan R',
+                p1: ' Buat Perusahaan Tertarik Dengan 3 ',
+                p2: 'Keterampilan yang Mudah Dipelajari',
+                p3: ' Keterampilan merupakan salah satu poin<br> penting yang harus ditunjukkan di dalam<br>curriculum vitae.',
+
+                p4: '    16 Mei 2020 - 17:27',
+                src: 'asset/image/Rectangle 3.png',
+
+
+
+            },
+           
+            {
+               
+               name: 'Alfan Ghinan R',
+               p1: ' Belum Dapat Panggilan Usai ',
+               p2: 'Wawancara? Mulailah Menindaklanjuti<br> Dari Sekarang!',
+               p3: ' Apa yang Anda rasakan ketika surat lamaran <br> diterima dengan baik dan bahkan hingga     <br>mendapatkan panggilan wawancara? Tentu<br> saja bahagia.',
+
+               p4: '    16 Mei 2020 - 17:27',
+               src: 'asset/image/Rectangle 1.png',
+
+
+
+           },
+           {
+               id: 1,
+               name: 'Alfan Ghinan R',
+               p1: '  Mencari Kerja di Dubai dengan Visit ',
+               p2: 'Visa, Cari Tahu Lebih Dalam Tentang<br> Peraturannya!',
+               p3: ' Sebagai salah satu kota yang menjadi<br> incaran tenaga kerja asing, Dubai<br> menyediakan beragam sektor. Namun <br>demikian, proses mencari pekerjaan di sini<br> membutuhkan waktu yang tidak sebentar.',
+
+               p4: '    16 Mei 2020 - 17:27',
+               src: 'asset/image/Rectangle 2.png',
+
+
+
+           },
+           {
+               id: 1,
+               name: 'Alfan Ghinan R',
+               p1: ' Buat Perusahaan Tertarik Dengan 3 ',
+               p2: 'Keterampilan yang Mudah Dipelajari',
+               p3: ' Keterampilan merupakan salah satu poin<br> penting yang harus ditunjukkan di dalam<br>curriculum vitae.',
+
+               p4: '    16 Mei 2020 - 17:27',
+               src: 'asset/image/Rectangle 3.png',
+
+
+
+           },
+        ]
+
+        var cards = ''
+
+        testimonials.forEach(el => {
+            let template = `
+            
+    <div class="card flex flex-col   bg-white p-5 m-5 ">
+        <img src="${el.src}" class="  mb-6">
+        <p class="font-bold mt-4 text-[14px] font-semibold  text-red-800 "> ${el.name} </p>
+        <p class="text-[16px]  font-bold "> ${el.p1} </p>
+        <p class="text-[16px]  font-bold ">${el.p2}</p>
+        <p class="text-[16px]  font-semibold">${el.p3}</p>
+        <p class="text-[14px] text-gray-400">${el.p4}</p>
+    
+    
+  
+    </div>
+  `
+
+            cards += template
+        })
+
+        elem.insertAdjacentHTML('beforeend', cards)
+
+        // ARROWS
+
+        var right = document.getElementById('carrousel-right')
+
+        var left = document.getElementById('carrousel-left')
+
+        right.addEventListener('click', function () {
+            elem.scrollLeft += 800
+        })
+
+        left.addEventListener('click', function () {
+            elem.scrollLeft -= 800
+        })
+    </script>
+    
+   
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -1538,13 +1719,8 @@
             }
         }
 
-
-
-
-
-
-
     </script>
+    
 </body>
 
 </html>
