@@ -4,7 +4,7 @@ This project was repository build using basic HTML5 and additional framework css
 
 ## How to Usage
 
-Type `git clone https://github.com/esteh-creative/wehub-market.git` in your terminal to start work on your local computer. Then change or add code based on tasks from mentor and Esteh Creative's team already provided.
+Type `git clone https://github.com/esteh-creative/rumahpekerja-tailwindcss.git` in your terminal to start work on your local computer. Then change or add code based on tasks from mentor and Esteh Creative's team already provided.
 
 ## How to Start Work
 
