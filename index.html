@@ -11,15 +11,13 @@
             display: block;
         }
 
-
         .card {
-            min-width: 30vw;
+            min-width: max-content;
         }
 
-        .arrow {
-            top: 30%;
-
-        }
+        /* .arrow {
+            top: 50%;
+        } */
 
         #carrusel {
             scroll-behavior: smooth;
@@ -123,11 +121,11 @@
                                     href="#">Menu 3</a></li>
                         </ul>
                     </div>
-                 </div>
-                    <div class="container flex  items-center pl-16  ">
-                   <!-- nav kanan -->
-                  <div
-                    class=" items-center inline-block relative flex flex-wrap md:flex-row md:space-x-2  md:text-sm md:font-medium pl-64 ">
+                  </div>
+                   <div class=" hidden md:block container flex  items-center pl-16  ">
+                 <!-- nav kanan -->
+                 <div
+                    class="  items-center inline-block  flex flex-wrap  md:space-x-2  md:text-sm md:font-medium pl-64 ">
 
 
                     <div class="dropdown inline-block relative">
@@ -156,10 +154,40 @@
                             class="bg-transparent text-[16px]  hover:bg-[#F2404D]  text-black font-semibold hover:text-white py-2 px-4 border border-[#F2404D] hover:border-transparent rounded-lg">
                             Untuk Perusahaan
                         </button></a>
-                  </div>
-                </ul>
+                    </div>
+                    </div>
+                  </ul>
+            </div>
+            <div class="md:hidden flex ml-48 pl-96 ">
+                <button class="outline-none mobile-menu-button">
+                    <svg class="w-10 h-10 text-gray-500" x-show="!showMenu" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
             </div>
         </div>
+       
+        
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul>
+                <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Lowongan
+                        Kerja</a>
+                </li>
+                <li><a href="#"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Perusahaan</a>
+                </li>
+                <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Lainnya</a>
+                </li>
+                <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Daftar</a>
+                <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Masuk</a>
+                <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Untuk
+                        Perusahaan</a>
+                </li>
+            </ul>
+        </div>
+        </ul>
     </nav>
 
 
@@ -168,7 +196,7 @@
         <div class="rounded-xl p-4 bg-primary flex mx-auto ">
             <div class="  w-1/2 mr-2 rounded-3xl p-14">
                 <div class="mb-8">
-                    <p class="text-sm text-[14px] text-gray-600 flex items-center">
+                    <p class=" text-[14px] text-gray-600 flex items-center">
                         <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M14.71 1.20998C14.617 1.11625 14.5064 1.04186 14.3846 0.991091C14.2627 0.940323 14.132 0.914185 14 0.914185C13.868 0.914185 13.7373 0.940323 13.6154 0.991091C13.4936 1.04186 13.383 1.11625 13.29 1.20998L5.84001 8.66998L2.71001 5.52998C2.61349 5.43674 2.49955 5.36343 2.37469 5.31423C2.24984 5.26502 2.11651 5.24089 1.98233 5.24321C1.84815 5.24553 1.71574 5.27426 1.59266 5.32776C1.46959 5.38125 1.35825 5.45846 1.26501 5.55498C1.17177 5.6515 1.09846 5.76545 1.04925 5.8903C1.00005 6.01516 0.97592 6.14848 0.978241 6.28266C0.980563 6.41684 1.00929 6.54925 1.06278 6.67233C1.11628 6.79541 1.19349 6.90674 1.29001 6.99998L5.13001 10.84C5.22297 10.9337 5.33358 11.0081 5.45543 11.0589C5.57729 11.1096 5.708 11.1358 5.84001 11.1358C5.97202 11.1358 6.10273 11.1096 6.22459 11.0589C6.34645 11.0081 6.45705 10.9337 6.55001 10.84L14.71 2.67998C14.8115 2.58634 14.8925 2.47269 14.9479 2.34619C15.0033 2.21969 15.0319 2.08308 15.0319 1.94498C15.0319 1.80688 15.0033 1.67028 14.9479 1.54378C14.8925 1.41728 14.8115 1.30363 14.71 1.20998Z"
@@ -198,7 +226,7 @@
 
                     </div>
                     <button type="submit"
-                        class="p-2.5 ml-2 text-sm font-medium text-white bg-red-700 rounded-lg border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">Eksplor
+                        class="p-2.5 ml-2 text-sm font-medium text-white bg-red-700 rounded-lg border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 ">Eksplor
 
                         <span class="sr-only">Eksplor</span>
                     </button>
@@ -1102,7 +1130,7 @@
                 </div>
                 <div class="pl-80">
                     <button type="submit"
-                        class="p-2.5 px-10 ml-2 text-[16px] font-medium text-white bg-red-700 rounded-xl border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">Gabung
+                        class="p-2.5 px-10 ml-2 text-[16px] font-medium text-white bg-red-700 rounded-xl border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 ">Gabung
                         Sekarang
                     </button>
                 </div>
@@ -1134,31 +1162,31 @@
 
         <!-- grid -->
         <div class="relative">
-            <div id="carrusel" class="flex flex-row overflow-x-auto ">
+            <div id="carrusel" class="flex flex-row overflow-hidden ">
             </div>
         </div>
     </div>
-     <div class="inline-flex   justify-center pl-96 ">
+    <div class="inline-flex   justify-center pl-96 ">
         <button type="button" class="py-2 px-4 pl-64">
             <svg width="24" height="8" viewBox="0 0 24 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="24" height="8" rx="4" fill="#F2404D" />
             </svg>
 
         </button>
-        <button type="button" class="py-2 px-4"> <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+        <button id="carrousel-left" type="button" class="py-2 px-4">
+            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="8" height="8" rx="4" fill="#FEECED" />
             </svg>
 
         </button>
-        <button type="button" class="py-2 px-4"> <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+        <button id="carrousel-left" type="button" class="py-2 px-4"> <svg width="8" height="8" viewBox="0 0 8 8"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="8" height="8" rx="4" fill="#FEECED" />
             </svg>
 
         </button>
-        <button type="button" class="py-2 px-4"> <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+        <button id="carrousel-left" type="button" class="py-2 px-4"> <svg width="8" height="8" viewBox="0 0 8 8"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="8" height="8" rx="4" fill="#FEECED" />
             </svg>
 
@@ -1167,17 +1195,20 @@
 
 
     </div>
-    <div class=" relative pl-96 justify-center mx-44"  id="carrousel-right" id="carrusel">
+    <div type="button" class=" relative pl-96 justify-center mx-44" id="carrousel-right" id="carrusel">
         <button
             class="bg-transparent hover:bg-[#F2404D]  text-black font-semibold hover:text-white py-2 px-10 border border-[#F2404D] hover:border-transparent rounded-lg">
             Baca Selengkapnya
         </button></a>
-    </div> 
     </div>
-    <div class=" border border-transparent relative mt-10   w-full  ">
+    </div>
 
-        <div class="   absolute ml-20 left-96  pl-96">
-            <img class="   " src="asset/image/purepng 1.png" alt="Logo">
+
+
+    <div class=" border border-transparent relative mt-15   w-full  ">
+
+        <div class="   absolute ml-28 left-96  pl-96 w-full">
+            <img class="  h-11/12    " src="asset/image/purepng 1.png" alt="Logo">
         </div>
         <div class="   absolute  ">
             <svg width="179" height="204" viewBox="0 0 179 204" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1186,7 +1217,7 @@
                     stroke="white" stroke-opacity="0.5" stroke-width="56" />
             </svg>
         </div>
-        <div class="border bg-pink     pl-28 my-10 w-full   ">
+        <div class="border bg-pink  pl-28 my-10 w-full     ">
             <div class="mb-10 pl-20 ">
                 <p class="absolute mt-0  pl-10 max-h-4  font-bold text-[32px]">
                     Unduh Rumah Pekerja Mobile
@@ -1295,7 +1326,7 @@
             </div>
         </div>
     </div>
- </div>
+    </div>
 
     <!-- footer -->
     <footer class=" mt-10 bg-primary">
@@ -1389,12 +1420,8 @@
                             d="M42.9963 36.824C42.5169 36.5843 39.4008 35.1461 38.9213 34.9064C38.4419 34.6667 37.9625 34.6667 37.4831 35.1461C37.0037 35.6255 36.0449 37.0637 35.5655 37.5431C35.3258 38.0225 34.8464 38.0225 34.367 37.7828C32.6891 37.0637 31.0112 36.1049 29.573 34.9064C28.3745 33.7079 27.176 32.2697 26.2172 30.8315C25.9775 30.3521 26.2172 29.8727 26.4569 29.633C26.6966 29.3933 26.9363 28.9139 27.4157 28.6742C27.6554 28.4345 27.8951 27.9551 27.8951 27.7154C28.1348 27.4757 28.1348 26.9963 27.8951 26.7566C27.6554 26.5169 26.4569 23.6405 25.9775 22.4419C25.7378 20.764 25.2584 20.764 24.779 20.764C24.5393 20.764 24.0599 20.764 23.5805 20.764C23.1011 20.764 22.382 21.2434 22.1423 21.4831C20.7041 22.9213 19.985 24.5993 19.985 26.5169C20.2247 28.6742 20.9438 30.8315 22.382 32.7491C25.0187 36.5843 28.3745 39.7004 32.4494 41.618C33.6479 42.0974 34.6067 42.5768 35.8052 42.8165C37.0037 43.2959 38.2022 43.2959 39.6405 43.0562C41.3184 42.8165 42.7566 41.618 43.7154 40.1798C44.1948 39.221 44.1948 38.2622 43.9551 37.3034C43.9551 37.3034 43.4757 37.0637 42.9963 36.824ZM48.9888 15.0112C39.6405 5.66292 24.5393 5.66292 15.191 15.0112C7.5206 22.6816 6.0824 34.427 11.3558 43.7753L8 56L20.7041 52.6442C24.2996 54.5618 28.1348 55.5206 31.97 55.5206C45.1536 55.5206 55.7004 44.9738 55.7004 31.7903C55.9401 25.5581 53.3034 19.5655 48.9888 15.0112ZM42.5169 48.5693C39.4008 50.4869 35.8052 51.6854 31.97 51.6854C28.3745 51.6854 25.0187 50.7266 21.9026 49.0487L21.1835 48.5693L13.7528 50.4869L15.6704 43.2959L15.191 42.5768C9.4382 32.9888 12.3146 21.0037 21.6629 15.0112C31.0112 9.01873 42.9963 12.1348 48.7491 21.2434C54.5019 30.5918 51.8652 42.8165 42.5169 48.5693Z"
                             fill="white" />
                     </svg>
-
-
                 </a>
-
             </div>
-
         </div>
     </footer>
     <!-- akhir footer -->
@@ -1490,7 +1517,7 @@
         testimonials.forEach(el => {
             let template = `
             
-    <div class="card flex flex-col   bg-white p-5 m-5 ">
+    <div class="card flex flex-col  bg-white p-3  ">
         <img src="${el.src}" class="  mb-6">
         <p class="font-bold mt-4 text-[14px] font-semibold  text-red-800 "> ${el.name} </p>
         <p class="text-[16px]  font-bold "> ${el.p1} </p>
@@ -1523,7 +1550,14 @@
         })
     </script>
 
+    <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
 
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
