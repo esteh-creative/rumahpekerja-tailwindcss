@@ -27,4 +27,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('article', [ArticleController::class, 'index']);
 Route::post('article/tambah_data', [ArticleController::class, 'create']);
-
+Route::put('article/tambah_data/update/{id}', [ArticleController::class, 'update']);
+Route::delete('article/tambah_data/update/delete/{id}', [ArticleController::class, 'delete_data']);

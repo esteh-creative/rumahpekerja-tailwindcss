@@ -86,9 +86,8 @@ class ArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Request $request, $id)
+    public function edit($id)
     {
-        $check_data = Article::find($id);
         
     }
 
@@ -101,7 +100,29 @@ class ArticleController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $check_data = Article::firstWhere('id', $id);
+        if($check_data)
+        {
+            $data_Article = Article::find($id);
+            $data_Article->image       = $request->image;
+            $data_Article->writer      = $request->writer;
+            $data_Article->title       = $request->title;
+            $data_Article->description = $request->description;
+            $data_Article->date        = $request->date;
+            $data_Article -> save();
+            return response([
+                'error'    => false,
+                'message' => 'Data Berhasil Diubah',
+                'data'    => $data_Article
+            ], 200);
+        }
+        else
+        {
+            return response([
+                'error'    => true,
+                'message' => 'Id Article Tidak Ditemukan',
+            ], 500);
+        }
     }
 
     /**
@@ -118,4 +139,27 @@ class ArticleController extends Controller
     public function insert_data(Request $request) {
 
     }
+
+    public function delete_data($id)
+    {
+        $check_data = Article::firstWhere('id', $id);
+        if($check_data)
+        {
+            Article::destroy($id);
+            return response([
+                'error'    => false,
+                'message' => 'Data Dihapus',
+            ], 200);
+        }
+        else
+        {
+            return response([
+                'error'    => true,
+                'message' => 'Id Article Tidak Ditemukan',
+            ], 500);
+        }
+    }
 }
+
+
+
